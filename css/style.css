@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100;200;300;400;500;600&display=swap');
+
+
+/*---------RESET---------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*--------HEADER---------*/
+header{
+    background-color: #a57548;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  
+}
+
+
+header nav ul li {
+    
+   padding: 15px 7px 15px 7px;
+
+}
+
+header h1 a{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Chivo Mono', monospace;
+    color: #f2f79e;
+    text-decoration: none;
+}
+
+header h1{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Chivo Mono', monospace;
+    color: #f2f79e;
+}
+
+header nav ul{
+    list-style: none;
+    margin: 10px;
+    display: flex;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #f2f79e;
+    font-family: 'Chivo Mono', monospace;
+}
+
+.menu li:hover{
+    background-color: #2b0504;
+    padding: auto;
+    transition: 1s;
+    
+    
+
+}
+
+
+
+/*------MAIN--------*/
+
+.grid-container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+    
+    
+}
+
+.hero{
+    background-image:url(../img/fondoadan.jpg);
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+    background-attachment:fixed;
+    background-clip: border-box;
+    
+}
+
+.hero div h2{
+    font-family: 'Chivo Mono', monospace;
+    font-size: 35px;
+    text-align: center;
+    padding: 50px;
+    color: #2b0504;
+}
+
+
+.hero p{
+    font-size: 25px;
+    font-family: 'Chivo Mono', monospace;
+    text-align: center;
+    color: #2b0504;
+}
+
+.hero div{
+    background-color: #c9d6ea69;
+    height: 450px;
+    width: 900px;
+    margin: auto;
+   
+}
+
+.productos{
+    background-color: white;
+   
+}
+
+.productos p{
+    background-color: white;
+    font-family: 'Chivo Mono', monospace;
+    text-align: center;
+    padding: 20px;
+    color: #2B0504;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cajasproductos div img{
+    width: 210px;
+    height: 280px;
+    padding-bottom: 10px;
+    
+
+}
+
+.cajasproductos div{
+    width: 250px;
+    height: 350px;
+    border: 8px black groove;
+    text-align: center;
+    margin: 20px;
+    display: inline-block;
+    background-color: #ffeaae;
+    padding: 8px;
+    
+    
+}
+
+
+.cajasproductos div h3{
+    margin: 8px;
+    font-family: 'Chivo Mono', monospace;
+}
+
+
+.cajasproductos{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.cajasproductos h3{
+    font-size: 18px;
+}
+
+.fixed{
+    position: fixed;
+    right: 50px;
+    bottom: 30px;
+}
+
+
+.nosotros{
+    font-family: 'Chivo Mono', monospace;
+    background-image: url(../img/nosotrosfondo.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    background-position: top;
+}
+
+.nosotros h2{
+    font-size: 40px;
+    text-align: center;
+    margin-left: 50px;
+    padding-top: 20px;
+    text-decoration: 3px underline double;
+}
+
+.nosotros p{
+    margin: 20px 80px 20px 80px;
+    line-height: 30px;
+    text-align:left;
+}
+
+.nosotrostexto{
+    background-color: #ffe9ae85;
+    width: 90%;
+    margin: auto;
+}
+
+.servicios{
+    font-family: 'Chivo Mono', monospace;
+    margin: auto;
+    background-image: url(../img/serviciosfondo.jpg);
+    background-size:contain;
+    
+}
+
+.servicios img{
+    width: 300px;
+}
+
+.servicios h2{
+    padding-top: 10px;
+    padding-bottom: 25px;
+    text-align: center;
+    text-decoration: 3px underline double;
+    
+}
+
+.bloque1 p{
+    text-align: left;
+    padding: 100px 20px 20px 10px;
+}
+
+.bloque1 img{
+    padding-right: 0px;
+    
+}
+
+.bloque1{
+    display: flex;
+    padding-right: 30px;
+}
+
+.bloque2{
+    display: flex;
+    padding-left: 30px;
+}
+
+.bloque2 p{
+    text-align: left;
+    padding: 20px 10px 20px 50px;
+}
+
+.bloque2 img{
+    padding-left: 10px;
+}
+
+.bloque3{
+    padding: 10px 30px 20px 30px;
+}
+
+
+.subservicios{
+    background-color: #c9d6ea75;
+    width: 800px;
+    margin: auto;
+    padding: 0px;
+    
+}
+
+
+.titulop{
+    font-family: 'Chivo Mono', monospace;
+    padding: 40px 60px 60px 60px;
+    text-align: center;
+    text-decoration: 3px underline double #2B0504;
+    color: #2B0504;
+    background-color: #ffeaae;
+
+}
+
+.horizontal1{
+    display: flex;
+    padding-bottom: 20px;
+    grid-area: horizontal1;
+}
+
+.horizontal1 img{
+    width: 300px;
+    padding: 20px;
+}
+
+.horizontal1 p{
+    padding-top: 100px;
+}
+
+.pinturas{
+    background-color: #ffeaae;
+
+}
+
+.vertical{
+    display: flex;
+    padding-bottom: 20px;
+    grid-area: verticalp;
+    grid-column: 1/3;
+}
+
+.vertical img{
+    width: 300px;
+    padding: 20px;
+}
+
+.vertical p{
+    padding-top: 200px;
+}
+
+.horizontal2{
+    display: flex;
+    padding-bottom: 20px;
+    grid-area: horizontal2;
+}
+
+.horizontal2 img{
+    width: 300px;
+    padding: 20px;
+}
+
+.horizontal2 p{
+    padding-top: 100px;
+}
+
+.pinturas{
+    padding: 50px;
+    font-family: 'Chivo Mono', monospace;
+}
+
+.pagination{
+    background-color: #ffeaae;
+    padding: 10px;
+    margin: 0px;
+    
+}
+
+.contacto{
+    font-family: 'Chivo Mono', monospace;
+    background-image: url(../img/contactofondo.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.cuadro{
+    background-color: #ffe9ae8c;
+    margin: 0px 20px 0px 20px;
+}
+
+.contacto h2{
+    text-align: center;
+    padding: 20px 0px 30px 0px;
+
+}
+
+.contacto h3{
+    padding: 30px;
+}
+
+.contacto p{
+    padding: 0px 30px 0px 30px;
+}
+
+
+.contacto form{
+    padding: 30px;
+}
+
+.comentario h3{
+    padding: 50px 50px 0px 50px;
+    
+}
+
+.comentario textarea{
+    padding: 0px 50px 50px 0px;
+}
+
+
+
+/*-----FOOTER-------*/
+
+
+footer{
+    background-color: #2B0504;
+    display: flex;
+    
+}
+
+footer div img{
+    margin: 10px;
+    width: 30px;
+    
+}
+
+footer div{
+    margin-left: 900px;
+}
+
+footer h2{
+    font-family: 'Chivo Mono', monospace;
+    font-size: 20px;
+    color: #ffeaae;
+    padding: 10px 10px 10px 30px;
+}
+
+/*MEDIA QUERYS*/
+
+@media screen and(max-width:350px){
+    .gridcontainer{
+        width: 100%;
+        margin: 0%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header"
+            "intro"
+            "main"
+            "footer";
+        }
+    body{
+        display: grid;
+        width: 100%;
+        margin: 0%;
+    }
+}
