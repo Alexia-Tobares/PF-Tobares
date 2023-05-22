@@ -10,9 +10,7 @@
 /*--------HEADER---------*/
 
 .gridcontainer header{
-    display: grid;
     grid-area: header;
-    
 }
 
 header{
@@ -78,7 +76,6 @@ header nav ul li a{
 
 .gridcontainer main{
     grid-area: main;
-    display: grid;
 }
 
 .hero{
@@ -131,6 +128,7 @@ header nav ul li a{
     font-size: 20px;
     margin-bottom: 20px;
 }
+
 
 .cajasproductos div img{
     width: 210px;
@@ -387,7 +385,6 @@ header nav ul li a{
 /*-----FOOTER-------*/
 
 .gridcontainer footer{
-    display: grid;
     grid-area: footer;
 }
 
@@ -416,10 +413,11 @@ footer h2{
 
 /*MEDIA QUERYS*/
 
-@media screen and(max-width:350px){
-    .gridcontainer{
+/*@media screen and(min-width:350px){
+    /*.gridcontainer{
         width: 100%;
         margin: 0%;
+        background-color: #2B0504;
         display: grid;
         grid-template-columns: 1fr ;
         grid-template-rows: 250px 250px 150px;
@@ -428,20 +426,42 @@ footer h2{
             "main"
             "footer";
         }
-        
-}
+    .gridcontainer header{
+        width: 100%;
+        background-color: #a57548;
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    
+    }
+}*/
 
-@media screen and(max-width:600px){
+@media (max-width:350px){
     .gridcontainer{
         width: 100%;
-        margin: 0%;
+        margin: 0;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 250px 250px 150px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 180px auto 100px;
         grid-template-areas:
-            "header header"
-            "main main"
-            "footer footer";
+            "header"
+            "main"
+            "footer";
         }
-   
+
+
+    
+
+
+   footer div{
+    margin-left: 300px;
+   }
+   .hero{
+    background-image: url(../img/persistencia.jpg);
+    background-position:center;
+    background-size:cover;
+   }
 }

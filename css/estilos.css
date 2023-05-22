@@ -1,0 +1,28 @@
+header {
+  background-color: #a57548;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px; }
+  header h1 a {
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Chivo Mono', monospace;
+    color: #f2f79e;
+    text-decoration: none; }
+  header nav .menu {
+    list-style: none;
+    margin: 10px;
+    display: flex; }
+    header nav .menu li:hover {
+      padding: 15px 7px 15px 7px;
+      background-color: #2b0504;
+      padding: auto;
+      transition: 1s;
+      color: #f2f79e; }
+      header nav .menu li:hover a {
+        text-decoration: none;
+        color: #f2f79e;
+        font-family: 'Chivo Mono', monospace; }
