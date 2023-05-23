@@ -1,0 +1,21 @@
+footer {
+    background-color: #2B0504;
+    display: flex;
+    grid-area: footer;
+
+    h2 {
+        font-family: 'Chivo Mono', monospace;
+        font-size: 20px;
+        color: #ffeaae;
+        padding: 10px 10px 10px 30px;
+    }
+
+    div {
+        margin-left: 900px;
+        img {
+            margin: 10px;
+            width: 30px;
+        }
+    }
+
+}

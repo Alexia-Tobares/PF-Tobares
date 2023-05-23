@@ -1,0 +1,100 @@
+@media (max-width:412px){
+    
+    .gridcontainer{
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 180px auto 100px;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+        header{
+            h1{
+                a{
+                  font-size: 35px;
+                }
+            }
+        }
+        main{
+            .hero {
+                    background-image: url(../img/persistencia.jpg);
+                    background-position: center;
+                    background-size: cover;
+                }
+            
+            .productos {
+                .cajasproductos {
+                    div {
+                        padding: 0;
+                        width: 200px;
+        
+                        img {
+                            width: 190px;
+                            height: 260px;
+                        }
+                    }
+                }
+            }
+        
+            .fixed {
+                display: none;
+            }
+        }
+        
+        footer{
+            div{
+                margin-left: 300px;
+            }
+        }
+        }
+    
+    .gridcontainerp{
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 180px auto 100px;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+        header{
+            h1{
+                a{
+                    font-size: 35px;
+                }
+            }
+        }
+        main{
+            .horizontal1 {
+                    img {
+                        width: 200px;
+                        padding-left: 0px;
+                    }
+                }
+            
+            .vertical {
+                img {
+                    width: 190px;
+                    padding-left: 0px;
+                    margin-left: 0px;
+                }
+            }
+        
+            .horizontal2 {
+                img {
+                    width: 200px;
+                    padding-left: 0px;
+                }
+            }
+        }
+        footer{
+            div{
+                margin-left: 300px;
+            }
+        }
+        
+    }
+}

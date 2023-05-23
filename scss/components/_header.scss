@@ -1,0 +1,48 @@
+header{
+    background-color: nth($paletadecolores, 2);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    grid-area: header;
+    h1 {
+        font-size: 50px;
+        font-weight: 600;
+        font-family: 'Chivo Mono', monospace;
+        color: nth($paletadecolores, 1);
+        a {
+            font-size: 50px;
+            font-weight: 600;
+            font-family: 'Chivo Mono', monospace;
+            color: nth($paletadecolores, 3);
+            text-decoration: none;
+        }
+    }
+
+    nav {
+        .menu {
+            list-style: none;
+            margin: 10px;
+            display: flex;
+
+            li {
+                padding: 15px 7px 15px 7px;
+                &:hover {
+                    background-color: nth($paletadecolores, 4);
+                    padding: auto;
+                    transition: 1s;
+                    color: nth($paletadecolores, 3);
+                }
+
+                a {
+                    text-decoration: none;
+                    color: nth($paletadecolores, 3);
+                    font-family: 'Chivo Mono', monospace;
+                }
+        }
+    }
+}
+
+}
