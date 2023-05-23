@@ -13,6 +13,10 @@
     grid-area: header;
 }
 
+.gridcontainerp header{
+    grid-area: header;
+}
+
 header{
     background-color: #a57548;
     position: sticky;
@@ -77,6 +81,7 @@ header nav ul li a{
 .gridcontainer main{
     grid-area: main;
 }
+
 
 .hero{
     background-image:url(../img/fondoadan.jpg);
@@ -266,6 +271,21 @@ header nav ul li a{
     
 }
 
+.gridcontainerp main .horizontal1{
+    grid-area: main1;
+}
+
+.gridcontainerp main .vertical{
+    grid-area: main2;
+}
+
+.gridcontainerp main .horizontal2{
+    grid-area: main3;
+}
+
+.gridcontainerp main .pagination{
+    grid-area: pagination;
+}
 
 .titulop{
     font-family: 'Chivo Mono', monospace;
@@ -388,6 +408,10 @@ header nav ul li a{
     grid-area: footer;
 }
 
+.gridcontainerp footer{
+    grid-area: footer;
+}
+
 footer{
     background-color: #2B0504;
     display: flex;
@@ -413,31 +437,6 @@ footer h2{
 
 /*MEDIA QUERYS*/
 
-/*@media screen and(min-width:350px){
-    /*.gridcontainer{
-        width: 100%;
-        margin: 0%;
-        background-color: #2B0504;
-        display: grid;
-        grid-template-columns: 1fr ;
-        grid-template-rows: 250px 250px 150px;
-        grid-template-areas:
-            "header"
-            "main"
-            "footer";
-        }
-    .gridcontainer header{
-        width: 100%;
-        background-color: #a57548;
-        position: sticky;
-        top: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px;
-    
-    }
-}*/
 
 @media (max-width:350px){
     .gridcontainer{
@@ -452,9 +451,19 @@ footer h2{
             "footer";
         }
 
-
+    .cajasproductos div{
+        padding: 0;
+        width: 200px;
+    }
     
+    .cajasproductos div img{
+        width: 190px;
+        height: 260px;
+    }
 
+    .fixed{
+        display: none;
+    }
 
    footer div{
     margin-left: 300px;
@@ -464,4 +473,36 @@ footer h2{
     background-position:center;
     background-size:cover;
    }
-}
+   .gridcontainerp{
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 180px auto auto auto 5px 100px;
+        grid-template-areas:
+            "header"
+            "main1"
+            "main2"
+            "main3"
+            "pagination"
+            "footer";
+        }
+    .horizontal1 img {
+        width: 200px;
+        padding-left: 0px;
+    }
+    .vertical img{
+        width: 190px;
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+    .horizontal2 img{
+        width: 200px;
+        padding-left: 0px;
+    }
+    header h1 a{
+        font-size: 35px;
+       
+    }
+   }
+   
