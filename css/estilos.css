@@ -1,3 +1,9 @@
+.gridcontainerp header {
+  grid-area: header; }
+
+.gridcontainer header {
+  grid-area: header; }
+
 header {
   background-color: #a57548;
   position: sticky;
@@ -26,6 +32,9 @@ header {
         text-decoration: none;
         color: #f2f79e;
         font-family: 'Chivo Mono', monospace; }
+
+.gridcontainer main {
+  grid-area: main; }
 
 main .hero {
   background-image: url(../img/fondoadan.jpg);
@@ -102,6 +111,12 @@ footer {
     margin: 10px;
     width: 30px; }
 
+.gridcontainer footer {
+  grid-area: footer; }
+
+.gridcontainerp footer {
+  grid-area: footer; }
+
 .titulop {
   font-family: 'Chivo Mono', monospace;
   padding: 40px 60px 60px 60px;
@@ -148,6 +163,15 @@ footer {
   padding: 10px;
   margin: 0px; }
 
+.gridcontainerp main .horizontal1 {
+  grid-area: main1; }
+
+.gridcontainerp main .horizontal2 {
+  grid-area: main3; }
+
+.gridcontainerp main .vertical {
+  grid-area: main2; }
+
 .nosotros {
   font-family: 'Chivo Mono', monospace;
   background-image: url(../img/nosotrosfondo.jpg);
@@ -169,3 +193,103 @@ footer {
       margin: 20px 80px 20px 80px;
       line-height: 30px;
       text-align: left; }
+
+.servicios {
+  font-family: 'Chivo Mono', monospace;
+  margin: auto;
+  background-image: url(../img/serviciosfondo.jpg);
+  background-size: contain; }
+  .servicios img {
+    width: 300px; }
+  .servicios h2 {
+    padding-top: 10px;
+    padding-bottom: 25px;
+    text-align: center;
+    text-decoration: 3px underline double; }
+  .servicios .subservicios {
+    background-color: #c9d6ea75;
+    width: 800px;
+    margin: auto;
+    padding: 0px; }
+  .servicios .bloque1 {
+    display: flex;
+    padding-right: 30px; }
+    .servicios .bloque1 img {
+      padding-right: 0px; }
+    .servicios .bloque1 p {
+      text-align: left;
+      padding: 100px 20px 20px 10px; }
+  .servicios .bloque2 {
+    display: flex;
+    padding-left: 30px; }
+    .servicios .bloque2 img {
+      padding-left: 10px; }
+    .servicios .bloque2 p {
+      text-align: left;
+      padding: 20px 10px 20px 50px; }
+  .servicios .bloque3 {
+    padding: 10px 30px 20px 30px; }
+
+.contacto {
+  font-family: 'Chivo Mono', monospace;
+  background-image: url(../img/contactofondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .contacto .cuadro {
+    background-color: #ffe9ae8c;
+    margin: 0px 20px 0px 20px; }
+    .contacto .cuadro h2 {
+      text-align: center;
+      padding: 20px 0px 30px 0px; }
+    .contacto .cuadro h3 {
+      padding: 30px; }
+    .contacto .cuadro p {
+      padding: 0px 30px 0px 30px; }
+    .contacto .cuadro form {
+      padding: 30px; }
+      .contacto .cuadro form .comentario h3 {
+        padding: 50px 50px 0px 50px; }
+      .contacto .cuadro form .comentario textarea {
+        padding: 0px 50px 50px 0px; }
+
+@media (max-width: 412px) {
+  .gridcontainer {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 180px auto 100px;
+    grid-template-areas: "header" "main" "footer"; }
+  .cajasproductos div {
+    padding: 0;
+    width: 200px; }
+    .cajasproductos div img {
+      width: 190px;
+      height: 260px; }
+  .fixed {
+    display: none; }
+  footer div {
+    margin-left: 300px; }
+  .hero {
+    background-image: url(../img/persistencia.jpg);
+    background-position: center;
+    background-size: cover; }
+  .gridcontainerp {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 180px auto auto auto 5px 100px;
+    grid-template-areas: "header" "main1" "main2" "main3" "pagination" "footer"; }
+  .horizontal1 img {
+    width: 200px;
+    padding-left: 0px; }
+  .vertical img {
+    width: 190px;
+    padding-left: 0px;
+    margin-left: 0px; }
+  .horizontal2 img {
+    width: 200px;
+    padding-left: 0px; }
+  header h1 a {
+    font-size: 35px; } }

@@ -1,3 +1,16 @@
+.gridcontainerp{
+    header{
+        grid-area: header;
+    }
+}
+
+.gridcontainer{
+    header{
+        grid-area: header;
+    }
+}
+
+
 header{
     background-color: #a57548;
     position: sticky;
@@ -36,6 +49,12 @@ header{
         }
     }
 
+}
+
+.gridcontainer{
+    main{
+        grid-area: main;
+    }
 }
 
 main{
@@ -133,6 +152,19 @@ footer{
 
 }
 
+
+.gridcontainer{
+    footer{
+        grid-area: footer;
+    }
+}
+
+.gridcontainerp{
+    footer{
+        grid-area: footer;
+    }
+}
+
 .titulop{
     font-family: 'Chivo Mono', monospace;
     padding: 40px 60px 60px 60px;
@@ -190,6 +222,31 @@ footer{
     margin: 0px;
 }
 
+.gridcontainerp{
+    main{
+        .horizontal1{
+            grid-area: main1;
+        }
+    }
+}
+
+.gridcontainerp{
+    main{
+        .horizontal2{
+            grid-area: main3;
+        }
+    }
+}
+
+
+.gridcontainerp{
+    main{
+        .vertical{
+            grid-area: main2;
+        }
+    }
+}
+
 .nosotros{
     font-family: 'Chivo Mono', monospace;
     background-image: url(../img/nosotrosfondo.jpg);
@@ -217,7 +274,157 @@ footer{
 }
 
 .servicios{
-    .subservicios{
-        
+    font-family: 'Chivo Mono', monospace;
+    margin: auto;
+    background-image: url(../img/serviciosfondo.jpg);
+    background-size:contain;
+    img{
+        width: 300px;
     }
-}
+    h2{
+        padding-top: 10px;
+        padding-bottom: 25px;
+        text-align: center;
+        text-decoration: 3px underline double;
+    }
+    .subservicios{
+        background-color: #c9d6ea75;
+        width: 800px;
+        margin: auto;
+        padding: 0px;
+    }
+    .bloque1{
+        display: flex;
+        padding-right: 30px;
+        img{
+            padding-right: 0px;
+        }
+        p{
+            text-align: left;
+            padding: 100px 20px 20px 10px;
+        }
+    }
+    .bloque2{
+        display: flex;
+        padding-left: 30px;
+        img{
+            padding-left: 10px;
+        }
+        p{
+            text-align: left;
+            padding: 20px 10px 20px 50px;
+        }
+    }
+    .bloque3{
+        padding: 10px 30px 20px 30px;
+    }
+    }
+    
+.contacto{
+    font-family: 'Chivo Mono', monospace;
+    background-image: url(../img/contactofondo.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    .cuadro{
+        background-color: #ffe9ae8c;
+        margin: 0px 20px 0px 20px;
+        h2{
+            text-align: center;
+            padding: 20px 0px 30px 0px;
+        }
+        h3{
+            padding: 30px;
+        }
+        p{
+            padding: 0px 30px 0px 30px;
+        }
+        form{
+            padding: 30px;
+            .comentario{
+                h3{
+                    padding: 50px 50px 0px 50px;
+                }
+                textarea{
+                    padding: 0px 50px 50px 0px;
+                }
+            }     
+        }
+    }
+} 
+
+@media (max-width:412px){
+    .gridcontainer{
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 180px auto 100px;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+        }
+    .cajasproductos{
+        div{
+            padding: 0;
+            width: 200px;
+            img{
+                width: 190px;
+                height: 260px;
+            }
+        }
+    }
+    .fixed{
+        display: none;
+    }
+    footer{
+        div{
+            margin-left: 300px;
+        }
+    }
+    .hero{
+        background-image: url(../img/persistencia.jpg);
+        background-position:center;
+        background-size:cover;
+    }
+    .gridcontainerp{
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 180px auto auto auto 5px 100px;
+        grid-template-areas:
+            "header"
+            "main1"
+            "main2"
+            "main3"
+            "pagination"
+            "footer";
+        }
+    .horizontal1{
+        img{
+            width: 200px;
+            padding-left: 0px;
+        }
+    }
+    .vertical{
+        img{
+            width: 190px;
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+    }
+    .horizontal2{
+        img{
+            width: 200px;
+            padding-left: 0px;
+        }
+    }
+    header{
+        h1{
+            a{
+                font-size: 35px;
+            }
+        }
+    }
+    }

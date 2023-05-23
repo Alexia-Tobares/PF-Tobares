@@ -438,7 +438,7 @@ footer h2{
 /*MEDIA QUERYS*/
 
 
-@media (max-width:350px){
+@media (max-width:412px){
     .gridcontainer{
         width: 100%;
         margin: 0;
