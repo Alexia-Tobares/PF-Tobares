@@ -1,11 +1,6 @@
 header{
     background-color: nth($paletadecolores, 2);
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
+    @extend %header;
     grid-area: header;
     h1 {
         font-size: 50px;

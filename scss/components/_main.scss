@@ -21,18 +21,16 @@
                 margin: auto;
 
                 h2 {
+                    @include font(35px, center );
                     font-family: 'Chivo Mono', monospace;
-                    font-size: 35px;
-                    text-align: center;
                     padding: 50px;
-                    color: #2b0504;
+                    color: nth($paletadecolores, 4);
                 }
 
                 p {
-                    font-size: 25px;
+                    @include font(25px, center);
                     font-family: 'Chivo Mono', monospace;
-                    text-align: center;
-                    color: #2b0504;
+                    color: nth($paletadecolores, 4);
                 }
             }
         }
@@ -41,12 +39,11 @@
             background-color: white;
 
             p {
+                @include font(20px, center);
                 background-color: white;
                 font-family: 'Chivo Mono', monospace;
-                text-align: center;
                 padding: 20px;
-                color: #2B0504;
-                font-size: 20px;
+                color: nth($paletadecolores, 4);
                 margin-bottom: 20px;
             }
 
@@ -62,7 +59,7 @@
                     text-align: center;
                     margin: 20px;
                     display: inline-block;
-                    background-color: #ffeaae;
+                    background-color: nth($paletadecolores, 3);
                     padding: 8px;
 
                     h3 {
@@ -98,11 +95,11 @@
             padding: 40px 60px 60px 60px;
             text-align: center;
             text-decoration: 3px underline double #2B0504;
-            color: #2B0504;
-            background-color: #ffeaae;
+            color: nth($paletadecolores, 4);
+            background-color: nth($paletadecolores, 3);
         }
         .pinturas{
-            background-color: #ffeaae;
+            background-color: nth($paletadecolores, 3);
             padding: 50px;
             font-family: 'Chivo Mono', monospace;
             .horizontal1{
@@ -145,7 +142,7 @@
             }
             }
         .pagination{
-            background-color: #ffeaae;
+            background-color: nth($paletadecolores, 3);
             padding: 10px;
             margin: 0px;
         }
@@ -168,8 +165,7 @@
             width: 90%;
             margin: auto;
             h2{
-                font-size: 40px;
-                text-align: center;
+                @include font(40px, center);
                 margin-left: 50px;
                 padding-top: 20px;
                 text-decoration: 3px underline double;

@@ -4,3 +4,16 @@ $paletadecolores:
 #f2f79e,
 #2b0504;
 
+%header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+@mixin font($size, $align){
+    font-size: $size;
+    text-align: $align;
+}

@@ -1,12 +1,12 @@
 footer {
-    background-color: #2B0504;
+    background-color: nth($paletadecolores, 4);
     display: flex;
     grid-area: footer;
 
     h2 {
         font-family: 'Chivo Mono', monospace;
         font-size: 20px;
-        color: #ffeaae;
+        color: nth($paletadecolores, 3);
         padding: 10px 10px 10px 30px;
     }
 

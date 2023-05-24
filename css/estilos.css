@@ -1,16 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100;200;300;400;500;600&display=swap");
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px; }
+
 * {
   margin: 0;
   padding: 0; }
 
 header {
   background-color: #a57548;
-  position: sticky;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
   grid-area: header; }
   header h1 {
     font-size: 50px;
@@ -56,25 +58,25 @@ header {
       width: 900px;
       margin: auto; }
       .gridcontainer main .hero div h2 {
-        font-family: 'Chivo Mono', monospace;
         font-size: 35px;
         text-align: center;
+        font-family: 'Chivo Mono', monospace;
         padding: 50px;
         color: #2b0504; }
       .gridcontainer main .hero div p {
         font-size: 25px;
-        font-family: 'Chivo Mono', monospace;
         text-align: center;
+        font-family: 'Chivo Mono', monospace;
         color: #2b0504; }
   .gridcontainer main .productos {
     background-color: white; }
     .gridcontainer main .productos p {
+      font-size: 20px;
+      text-align: center;
       background-color: white;
       font-family: 'Chivo Mono', monospace;
-      text-align: center;
       padding: 20px;
-      color: #2B0504;
-      font-size: 20px;
+      color: #2b0504;
       margin-bottom: 20px; }
     .gridcontainer main .productos .cajasproductos {
       display: flex;
@@ -87,7 +89,7 @@ header {
         text-align: center;
         margin: 20px;
         display: inline-block;
-        background-color: #ffeaae;
+        background-color: #f2f79e;
         padding: 8px; }
         .gridcontainer main .productos .cajasproductos div h3 {
           margin: 8px;
@@ -107,11 +109,11 @@ header {
   padding: 40px 60px 60px 60px;
   text-align: center;
   text-decoration: 3px underline double #2B0504;
-  color: #2B0504;
-  background-color: #ffeaae; }
+  color: #2b0504;
+  background-color: #f2f79e; }
 
 .gridcontainerp main .pinturas {
-  background-color: #ffeaae;
+  background-color: #f2f79e;
   padding: 50px;
   font-family: 'Chivo Mono', monospace; }
   .gridcontainerp main .pinturas .horizontal1 {
@@ -144,7 +146,7 @@ header {
       padding-top: 100px; }
 
 .gridcontainerp .pagination {
-  background-color: #ffeaae;
+  background-color: #f2f79e;
   padding: 10px;
   margin: 0px; }
 
@@ -229,13 +231,13 @@ header {
         padding: 0px 50px 50px 0px; }
 
 footer {
-  background-color: #2B0504;
+  background-color: #2b0504;
   display: flex;
   grid-area: footer; }
   footer h2 {
     font-family: 'Chivo Mono', monospace;
     font-size: 20px;
-    color: #ffeaae;
+    color: #f2f79e;
     padding: 10px 10px 10px 30px; }
   footer div {
     margin-left: 900px; }
@@ -243,7 +245,7 @@ footer {
       margin: 10px;
       width: 30px; }
 
-@media (max-width: 412px) {
+@media (max-width: 500px) {
   .gridcontainer {
     width: 100%;
     margin: 0;
