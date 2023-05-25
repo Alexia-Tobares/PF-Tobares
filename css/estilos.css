@@ -62,7 +62,10 @@ header {
         text-align: center;
         font-family: 'Chivo Mono', monospace;
         padding: 50px;
-        color: #2b0504; }
+        color: #2b0504;
+        transition: 3s; }
+        .gridcontainer main .hero div h2:hover {
+          transform: scale(1.3); }
       .gridcontainer main .hero div p {
         font-size: 25px;
         text-align: center;
@@ -150,85 +153,97 @@ header {
   padding: 10px;
   margin: 0px; }
 
-.gridcontainern main .nosotros {
-  font-family: 'Chivo Mono', monospace;
-  background-image: url(../img/nosotrosfondo.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 600px;
-  background-position: top; }
-  .gridcontainern main .nosotros .nosotrostexto {
-    background-color: #ffe9ae85;
-    width: 90%;
-    margin: auto; }
-    .gridcontainern main .nosotros .nosotrostexto h2 {
-      font-size: 40px;
-      text-align: center;
-      margin-left: 50px;
-      padding-top: 20px;
-      text-decoration: 3px underline double; }
-    .gridcontainern main .nosotros .nosotrostexto p {
-      margin: 20px 80px 20px 80px;
-      line-height: 30px;
-      text-align: left; }
+.gridcontainern main {
+  grid-area: mainn; }
+  .gridcontainern main .nosotros {
+    font-family: 'Chivo Mono', monospace;
+    background-image: url(../img/nosotrosfondo.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    background-position: top; }
+    .gridcontainern main .nosotros .nosotrostexto {
+      background-color: #ffe9ae85;
+      width: 90%;
+      margin: auto; }
+      .gridcontainern main .nosotros .nosotrostexto h2 {
+        font-size: 40px;
+        text-align: center;
+        margin-left: 50px;
+        padding-top: 20px;
+        text-decoration: 3px underline double; }
+      .gridcontainern main .nosotros .nosotrostexto p {
+        margin: 20px 80px 20px 80px;
+        line-height: 30px;
+        text-align: left; }
 
-.gridcontainers main .servicios {
-  font-family: 'Chivo Mono', monospace;
-  margin: auto;
-  background-image: url(../img/serviciosfondo.jpg);
-  background-size: contain; }
-  .gridcontainers main .servicios .subservicios {
-    background-color: #c9d6ea75;
-    width: 800px;
+.gridcontainers main {
+  grid-area: mains; }
+  .gridcontainers main .servicios {
+    font-family: 'Chivo Mono', monospace;
     margin: auto;
-    padding: 0px; }
-    .gridcontainers main .servicios .subservicios h2 {
-      padding-top: 10px;
-      padding-bottom: 25px;
-      text-align: center;
-      text-decoration: 3px underline double; }
-    .gridcontainers main .servicios .subservicios .bloque1 {
-      display: flex;
-      padding-right: 30px; }
-      .gridcontainers main .servicios .subservicios .bloque1 p {
-        text-align: left;
-        padding: 100px 20px 20px 10px; }
-      .gridcontainers main .servicios .subservicios .bloque1 img {
-        width: 300px;
-        padding-right: 0px; }
-    .gridcontainers main .servicios .subservicios .bloque2 {
-      display: flex;
-      padding-left: 30px; }
-      .gridcontainers main .servicios .subservicios .bloque2 p {
-        text-align: left;
-        padding: 20px 10px 20px 50px; }
-      .gridcontainers main .servicios .subservicios .bloque2 img {
-        width: 300px;
-        padding-left: 10px; }
-    .gridcontainers main .servicios .subservicios .bloque3 {
-      padding: 10px 30px 20px 30px; }
+    background-image: url(../img/serviciosfondo.jpg);
+    background-size: contain; }
+    .gridcontainers main .servicios .subservicios {
+      background-color: #c9d6ea75;
+      width: 800px;
+      margin: auto;
+      padding: 0px; }
+      .gridcontainers main .servicios .subservicios h2 {
+        padding-top: 10px;
+        padding-bottom: 25px;
+        text-align: center;
+        text-decoration: 3px underline double; }
+      .gridcontainers main .servicios .subservicios .bloque1 {
+        display: flex;
+        padding-right: 30px; }
+        .gridcontainers main .servicios .subservicios .bloque1 p {
+          text-align: left;
+          padding: 100px 20px 20px 10px; }
+        .gridcontainers main .servicios .subservicios .bloque1 img {
+          width: 300px;
+          padding-right: 0px;
+          transition: 3s; }
+          .gridcontainers main .servicios .subservicios .bloque1 img:hover {
+            transform: rotateY(180deg); }
+      .gridcontainers main .servicios .subservicios .bloque2 {
+        display: flex;
+        padding-left: 30px; }
+        .gridcontainers main .servicios .subservicios .bloque2 p {
+          text-align: left;
+          padding: 20px 10px 20px 50px; }
+        .gridcontainers main .servicios .subservicios .bloque2 img {
+          width: 300px;
+          padding-left: 10px;
+          transition: 3s; }
+          .gridcontainers main .servicios .subservicios .bloque2 img:hover {
+            transform: rotateY(180deg); }
+      .gridcontainers main .servicios .subservicios .bloque3 {
+        padding: 10px 30px 20px 30px; }
 
-.gridcontainerc main .contacto {
-  font-family: 'Chivo Mono', monospace;
-  background-image: url(../img/contactofondo.jpg);
-  background-size: cover;
-  background-repeat: no-repeat; }
-  .gridcontainerc main .contacto .cuadro {
-    background-color: #ffe9ae8c;
-    margin: 0px 20px 0px 20px; }
-    .gridcontainerc main .contacto .cuadro h2 {
-      text-align: center;
-      padding: 20px 0px 30px 0px; }
-    .gridcontainerc main .contacto .cuadro h3 {
-      padding: 30px; }
-    .gridcontainerc main .contacto .cuadro p {
-      padding: 0px 30px 0px 30px; }
-    .gridcontainerc main .contacto .cuadro form {
-      padding: 30px; }
-      .gridcontainerc main .contacto .cuadro form .comentario h3 {
-        padding: 50px 50px 0px 50px; }
-      .gridcontainerc main .contacto .cuadro form .comentario textarea {
-        padding: 0px 50px 50px 0px; }
+.gridcontainerc main {
+  grid-area: mainc; }
+  .gridcontainerc main .contacto {
+    font-family: 'Chivo Mono', monospace;
+    background-image: url(../img/contactofondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .gridcontainerc main .contacto .cuadro {
+      background-color: #ffe9ae8c;
+      margin: 0px 20px 0px 20px; }
+      .gridcontainerc main .contacto .cuadro h2 {
+        text-align: center;
+        padding: 20px 0px 30px 0px; }
+      .gridcontainerc main .contacto .cuadro h3 {
+        padding: 30px; }
+      .gridcontainerc main .contacto .cuadro p {
+        padding: 0px 30px 0px 30px; }
+      .gridcontainerc main .contacto .cuadro form {
+        padding: 30px; }
+        .gridcontainerc main .contacto .cuadro form .comentario h3 {
+          padding: 50px 50px 0px 50px; }
+        .gridcontainerc main .contacto .cuadro form .comentario textarea {
+          padding: 0px 50px 50px 0px; }
 
 footer {
   background-color: #2b0504;
@@ -261,7 +276,8 @@ footer {
       background-size: cover; }
     .gridcontainer main .productos .cajasproductos div {
       padding: 0;
-      width: 200px; }
+      width: 200px;
+      background-color: #c9d6ea; }
       .gridcontainer main .productos .cajasproductos div img {
         width: 190px;
         height: 260px; }
@@ -278,15 +294,58 @@ footer {
     grid-template-areas: "header" "main" "footer"; }
     .gridcontainerp header h1 a {
       font-size: 35px; }
-    .gridcontainerp main .horizontal1 img {
-      width: 200px;
-      padding-left: 0px; }
-    .gridcontainerp main .vertical img {
-      width: 190px;
-      padding-left: 0px;
-      margin-left: 0px; }
-    .gridcontainerp main .horizontal2 img {
-      width: 200px;
-      padding-left: 0px; }
+    .gridcontainerp main .titulop {
+      background-color: #e1e9f3; }
+    .gridcontainerp main .pinturas {
+      background-color: #e1e9f3; }
+      .gridcontainerp main .pinturas .horizontal1 img {
+        width: 200px;
+        padding-left: 0px; }
+      .gridcontainerp main .pinturas .vertical img {
+        width: 190px;
+        padding-left: 0px;
+        margin-left: 0px; }
+      .gridcontainerp main .pinturas .horizontal2 img {
+        width: 200px;
+        padding-left: 0px; }
+    .gridcontainerp main .pagination {
+      background-color: #e1e9f3; }
     .gridcontainerp footer div {
+      margin-left: 300px; }
+  .gridcontainern {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 180px auto 100px;
+    grid-template-areas: "header" "mainn" "footer"; }
+    .gridcontainern footer div {
+      margin-left: 300px; }
+    .gridcontainern main .nosotros {
+      background-image: url(../img/oldhouse.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat; }
+      .gridcontainern main .nosotros .nosotrostexto h2 {
+        font-size: 20px; }
+      .gridcontainern main .nosotros .nosotrostexto p {
+        font-size: 13px;
+        margin: 0; }
+  .gridcontainers {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 180px auto 100px;
+    grid-template-areas: "header" "mains" "footer"; }
+    .gridcontainers footer div {
+      margin-left: 300px; }
+  .gridcontainerc {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 180px auto 100px;
+    grid-template-areas: "header" "mainc" "footer"; }
+    .gridcontainerc footer div {
       margin-left: 300px; } }

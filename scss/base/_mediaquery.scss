@@ -29,6 +29,7 @@
                     div {
                         padding: 0;
                         width: 200px;
+                        background-color: #c9d6ea;
         
                         img {
                             width: 190px;
@@ -68,27 +69,37 @@
             }
         }
         main{
-            .horizontal1 {
-                    img {
-                        width: 200px;
-                        padding-left: 0px;
+            .titulop{
+                background-color: #e1e9f3;
+            }
+            .pinturas{
+                background-color: #e1e9f3;
+                .horizontal1 {
+                        img {
+                            width: 200px;
+                            padding-left: 0px;
+                        }
                     }
-                }
+                
+                    .vertical {
+                        img {
+                            width: 190px;
+                            padding-left: 0px;
+                            margin-left: 0px;
+                        }
+                    }
+                
+                    .horizontal2 {
+                        img {
+                            width: 200px;
+                            padding-left: 0px;
+                        }
+                    }
+            }
+            .pagination{
+                background-color: #e1e9f3;
+            }
             
-            .vertical {
-                img {
-                    width: 190px;
-                    padding-left: 0px;
-                    margin-left: 0px;
-                }
-            }
-        
-            .horizontal2 {
-                img {
-                    width: 200px;
-                    padding-left: 0px;
-                }
-            }
         }
         footer{
             div{
@@ -97,5 +108,74 @@
         }
         
     }
+
+    .gridcontainern{
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 180px auto 100px;
+        grid-template-areas:
+            "header"
+            "mainn"
+            "footer";
+        footer{
+            div{
+                margin-left: 300px;
+            }
+        }
+        main{
+            .nosotros{
+                background-image: url(../img/oldhouse.jpg);
+                background-position:center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                .nosotrostexto{
+                    h2{
+                        font-size: 20px;
+                    }
+                    p{
+                        font-size: 13px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    
+    .gridcontainers{
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 180px auto 100px;
+        grid-template-areas:
+            "header"
+            "mains"
+            "footer";
+        footer{
+            div{
+                margin-left: 300px;
+            }
+        }
+    }
+
+    .gridcontainerc{
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 180px auto 100px;
+        grid-template-areas:
+            "header"
+            "mainc"
+            "footer";
+        footer{
+            div{
+                margin-left: 300px;
+            }
+        }
+    }
 }
+
 
