@@ -352,16 +352,16 @@ footer {
         font-size: 10px;
         width: 10px; }
     .containern main .nosotros {
-      background-image: url(../img/oldhouse.jpg);
-      background-position: center;
-      background-size: cover; }
+      background-image: url(../img/contactofondo.jpg);
+      background-size: cover;
+      background-repeat: no-repeat; }
       .containern main .nosotros .nosotrostexto h2 {
         font-size: 20px;
         padding-top: 5px; }
       .containern main .nosotros .nosotrostexto p {
         font-size: 13px;
         margin: 0;
-        line-height: 15px;
+        line-height: 13px;
         padding-top: 10px; }
     .containern footer div {
       display: flex;
@@ -567,16 +567,16 @@ footer {
     .containern footer div {
       margin-left: 300px; }
     .containern main .nosotros {
-      background-image: url(../img/oldhouse.jpg);
-      background-position: center;
-      background-size: cover; }
+      background-image: url(../img/contactofondo.jpg);
+      background-size: cover;
+      background-repeat: no-repeat; }
       .containern main .nosotros .nosotrostexto h2 {
         font-size: 20px;
         padding-top: 5px; }
       .containern main .nosotros .nosotrostexto p {
         font-size: 13px;
         margin: 0;
-        line-height: 15px;
+        line-height: 13px;
         padding-top: 10px; }
     .containern footer div {
       display: flex;

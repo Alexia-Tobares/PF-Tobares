@@ -189,9 +189,9 @@
         }
         main{
             .nosotros{
-                background-image: url(../img/oldhouse.jpg);
-                background-position:center;
+                background-image: url(../img/contactofondo.jpg);
                 background-size:cover;
+                background-repeat: no-repeat;
                 .nosotrostexto{
                     h2{
                         font-size: 20px;
@@ -200,7 +200,7 @@
                     p{
                         font-size: 13px;
                         margin: 0;
-                        line-height: 15px;
+                        line-height: 13px;
                         padding-top: 10px;
                     }
                 }
@@ -576,9 +576,9 @@
         }
         main{
             .nosotros{
-                background-image: url(../img/oldhouse.jpg);
-                background-position:center;
-                background-size: cover;
+                background-image: url(../img/contactofondo.jpg);
+                background-size:cover;
+                background-repeat: no-repeat;
                 
                 .nosotrostexto{
                     h2{
@@ -588,7 +588,7 @@
                     p{
                         font-size: 13px;
                         margin: 0;
-                        line-height: 15px;
+                        line-height: 13px;
                         padding-top: 10px;
                     }
                 }
