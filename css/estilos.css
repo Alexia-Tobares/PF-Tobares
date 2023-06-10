@@ -12,8 +12,7 @@ header {
   padding: 0; }
 
 header {
-  background-color: #a57548;
-  grid-area: header; }
+  background-color: #a57548; }
   header h1 {
     font-size: 50px;
     font-weight: 600;
@@ -27,10 +26,11 @@ header {
       text-decoration: none; }
   header nav .menu {
     list-style: none;
-    margin: 10px;
-    display: flex; }
+    margin: 5px 10px 5px 5px;
+    display: flex;
+    justify-content: space-between; }
     header nav .menu li {
-      padding: 15px 7px 15px 7px; }
+      padding: 15px 7px 15px 0px; }
       header nav .menu li:hover {
         background-color: #2b0504;
         padding: auto;
@@ -41,73 +41,73 @@ header {
         color: #f2f79e;
         font-family: 'Chivo Mono', monospace; }
 
-.gridcontainer main {
-  grid-area: main; }
-  .gridcontainer main .hero {
-    background-image: url(../img/fondoadan.jpg);
-    width: 100%;
-    height: 600px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
-    background-clip: border-box; }
-    .gridcontainer main .hero div {
-      background-color: #c9d6ea69;
-      height: 450px;
-      width: 900px;
-      margin: auto; }
-      .gridcontainer main .hero div h2 {
-        font-size: 35px;
-        text-align: center;
-        font-family: 'Chivo Mono', monospace;
-        padding: 50px;
-        color: #2b0504;
-        transition: 3s; }
-        .gridcontainer main .hero div h2:hover {
-          transform: scale(1.3); }
-      .gridcontainer main .hero div p {
-        font-size: 25px;
-        text-align: center;
-        font-family: 'Chivo Mono', monospace;
-        color: #2b0504; }
-  .gridcontainer main .productos {
-    background-color: white; }
-    .gridcontainer main .productos p {
-      font-size: 20px;
+.container main .hero {
+  background-image: url(../img/fondoadan.jpg);
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  background-clip: border-box; }
+  .container main .hero div {
+    background-color: #c9d6ea69;
+    height: 450px;
+    width: 900px;
+    margin: auto; }
+    .container main .hero div h2 {
+      font-size: 35px;
       text-align: center;
-      background-color: white;
       font-family: 'Chivo Mono', monospace;
-      padding: 20px;
+      padding: 50px;
       color: #2b0504;
-      margin-bottom: 20px; }
-    .gridcontainer main .productos .cajasproductos {
-      display: flex;
-      justify-content: space-around;
-      flex-direction: row; }
-      .gridcontainer main .productos .cajasproductos div {
-        width: 250px;
-        height: 350px;
-        border: 8px black groove;
-        text-align: center;
-        margin: 20px;
-        display: inline-block;
-        background-color: #f2f79e;
-        padding: 8px; }
-        .gridcontainer main .productos .cajasproductos div h3 {
-          margin: 8px;
-          font-family: 'Chivo Mono', monospace;
-          font-size: 18px; }
-        .gridcontainer main .productos .cajasproductos div img {
-          width: 210px;
-          height: 280px;
-          padding-bottom: 10px; }
-  .gridcontainer main .fixed {
-    position: fixed;
-    right: 50px;
-    bottom: 30px; }
+      transition: 3s; }
+      .container main .hero div h2:hover {
+        transform: scale(1.3); }
+    .container main .hero div p {
+      font-size: 25px;
+      text-align: center;
+      font-family: 'Chivo Mono', monospace;
+      color: #2b0504; }
 
-.gridcontainerp main .titulop {
+.container main .productos {
+  background-color: white; }
+  .container main .productos p {
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    font-family: 'Chivo Mono', monospace;
+    padding: 20px;
+    color: #2b0504;
+    margin-bottom: 20px; }
+  .container main .productos .cajasproductos {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row; }
+    .container main .productos .cajasproductos div {
+      width: 250px;
+      height: 350px;
+      border: 8px black groove;
+      text-align: center;
+      margin: 20px;
+      display: inline-block;
+      background-color: #f2f79e;
+      padding: 8px; }
+      .container main .productos .cajasproductos div h3 {
+        margin: 8px;
+        font-family: 'Chivo Mono', monospace;
+        font-size: 18px; }
+      .container main .productos .cajasproductos div img {
+        width: 210px;
+        height: 280px;
+        padding-bottom: 10px; }
+
+.container main .fixed {
+  position: fixed;
+  right: 50px;
+  bottom: 30px; }
+
+.containerp main .titulop {
   font-family: 'Chivo Mono', monospace;
   padding: 40px 60px 60px 60px;
   text-align: center;
@@ -115,140 +115,133 @@ header {
   color: #2b0504;
   background-color: #f2f79e; }
 
-.gridcontainerp main .pinturas {
+.containerp main .pinturas {
   background-color: #f2f79e;
   padding: 50px;
   font-family: 'Chivo Mono', monospace; }
-  .gridcontainerp main .pinturas .horizontal1 {
+  .containerp main .pinturas .horizontal1 {
     display: flex;
     padding-bottom: 20px;
     grid-area: main1; }
-    .gridcontainerp main .pinturas .horizontal1 img {
+    .containerp main .pinturas .horizontal1 img {
       width: 300px;
       padding: 20px; }
-    .gridcontainerp main .pinturas .horizontal1 p {
+    .containerp main .pinturas .horizontal1 p {
       padding-top: 100px; }
-  .gridcontainerp main .pinturas .vertical {
+  .containerp main .pinturas .vertical {
     display: flex;
     padding-bottom: 20px;
     grid-area: main2;
     grid-column: 1/3; }
-    .gridcontainerp main .pinturas .vertical img {
+    .containerp main .pinturas .vertical img {
       width: 300px;
       padding: 20px; }
-    .gridcontainerp main .pinturas .vertical p {
+    .containerp main .pinturas .vertical p {
       padding-top: 200px; }
-  .gridcontainerp main .pinturas .horizontal2 {
+  .containerp main .pinturas .horizontal2 {
     display: flex;
     padding-bottom: 20px;
     grid-area: main3; }
-    .gridcontainerp main .pinturas .horizontal2 img {
+    .containerp main .pinturas .horizontal2 img {
       width: 300px;
       padding: 20px; }
-    .gridcontainerp main .pinturas .horizontal2 p {
+    .containerp main .pinturas .horizontal2 p {
       padding-top: 100px; }
 
-.gridcontainerp .pagination {
+.containerp .pagination {
   background-color: #f2f79e;
   padding: 10px;
   margin: 0px; }
 
-.gridcontainern main {
-  grid-area: mainn; }
-  .gridcontainern main .nosotros {
-    font-family: 'Chivo Mono', monospace;
-    background-image: url(../img/nosotrosfondo.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 600px;
-    background-position: top; }
-    .gridcontainern main .nosotros .nosotrostexto {
-      background-color: #ffe9ae85;
-      width: 90%;
-      margin: auto; }
-      .gridcontainern main .nosotros .nosotrostexto h2 {
-        font-size: 40px;
-        text-align: center;
-        margin-left: 50px;
-        padding-top: 20px;
-        text-decoration: 3px underline double; }
-      .gridcontainern main .nosotros .nosotrostexto p {
-        margin: 20px 80px 20px 80px;
-        line-height: 30px;
-        text-align: left; }
+.containern main .nosotros {
+  font-family: 'Chivo Mono', monospace;
+  background-image: url(../img/nosotrosfondo.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  background-position: top; }
+  .containern main .nosotros .nosotrostexto {
+    background-color: #ffe9ae85;
+    width: 90%;
+    margin: auto; }
+    .containern main .nosotros .nosotrostexto h2 {
+      font-size: 40px;
+      text-align: center;
+      margin-left: 50px;
+      padding-top: 20px;
+      text-decoration: 3px underline double; }
+    .containern main .nosotros .nosotrostexto p {
+      margin: 20px 80px 20px 80px;
+      line-height: 30px;
+      text-align: left; }
 
-.gridcontainers main {
-  grid-area: mains; }
-  .gridcontainers main .servicios {
-    font-family: 'Chivo Mono', monospace;
+.containers main .servicios {
+  font-family: 'Chivo Mono', monospace;
+  margin: auto;
+  background-image: url(../img/serviciosfondo.jpg);
+  background-size: contain; }
+  .containers main .servicios .subservicios {
+    background-color: #c9d6ea75;
+    width: 800px;
     margin: auto;
-    background-image: url(../img/serviciosfondo.jpg);
-    background-size: contain; }
-    .gridcontainers main .servicios .subservicios {
-      background-color: #c9d6ea75;
-      width: 800px;
-      margin: auto;
-      padding: 0px; }
-      .gridcontainers main .servicios .subservicios h2 {
-        padding-top: 10px;
-        padding-bottom: 25px;
-        text-align: center;
-        text-decoration: 3px underline double; }
-      .gridcontainers main .servicios .subservicios .bloque1 {
-        display: flex;
-        padding-right: 30px; }
-        .gridcontainers main .servicios .subservicios .bloque1 p {
-          text-align: left;
-          padding: 100px 20px 20px 10px; }
-        .gridcontainers main .servicios .subservicios .bloque1 img {
-          width: 300px;
-          padding-right: 0px;
-          transition: 3s; }
-          .gridcontainers main .servicios .subservicios .bloque1 img:hover {
-            transform: rotateY(180deg); }
-      .gridcontainers main .servicios .subservicios .bloque2 {
-        display: flex;
-        padding-left: 30px; }
-        .gridcontainers main .servicios .subservicios .bloque2 p {
-          text-align: left;
-          padding: 20px 10px 20px 50px; }
-        .gridcontainers main .servicios .subservicios .bloque2 img {
-          width: 300px;
-          padding-left: 10px;
-          transition: 3s; }
-          .gridcontainers main .servicios .subservicios .bloque2 img:hover {
-            transform: rotateY(180deg); }
-      .gridcontainers main .servicios .subservicios .bloque3 {
-        padding: 10px 30px 20px 30px; }
+    padding: 0px; }
+    .containers main .servicios .subservicios h2 {
+      padding-top: 10px;
+      padding-bottom: 25px;
+      text-align: center;
+      text-decoration: 3px underline double; }
+    .containers main .servicios .subservicios .bloque1 {
+      display: flex;
+      padding-right: 30px; }
+      .containers main .servicios .subservicios .bloque1 p {
+        text-align: left;
+        padding: 100px 20px 20px 10px; }
+      .containers main .servicios .subservicios .bloque1 img {
+        width: 300px;
+        padding-right: 0px;
+        transition: 3s; }
+        .containers main .servicios .subservicios .bloque1 img:hover {
+          transform: rotateY(180deg); }
+    .containers main .servicios .subservicios .bloque2 {
+      display: flex;
+      padding-left: 30px; }
+      .containers main .servicios .subservicios .bloque2 p {
+        text-align: left;
+        padding: 20px 10px 20px 50px; }
+      .containers main .servicios .subservicios .bloque2 img {
+        width: 300px;
+        padding-left: 10px;
+        transition: 3s; }
+        .containers main .servicios .subservicios .bloque2 img:hover {
+          transform: rotateY(180deg); }
+    .containers main .servicios .subservicios .bloque3 {
+      padding: 10px 30px 20px 30px; }
 
-.gridcontainerc main {
-  grid-area: mainc; }
-  .gridcontainerc main .contacto {
-    font-family: 'Chivo Mono', monospace;
-    background-image: url(../img/contactofondo.jpg);
-    background-size: cover;
-    background-repeat: no-repeat; }
-    .gridcontainerc main .contacto .cuadro {
-      background-color: #ffe9ae8c;
-      margin: 0px 20px 0px 20px; }
-      .gridcontainerc main .contacto .cuadro h2 {
-        text-align: center;
-        padding: 20px 0px 30px 0px; }
-      .gridcontainerc main .contacto .cuadro h3 {
-        padding: 30px; }
-      .gridcontainerc main .contacto .cuadro p {
-        padding: 0px 30px 0px 30px; }
-      .gridcontainerc main .contacto .cuadro form {
-        padding: 30px; }
-        .gridcontainerc main .contacto .cuadro form .comentario h3 {
-          padding: 50px 50px 0px 50px; }
-        .gridcontainerc main .contacto .cuadro form .comentario textarea {
-          padding: 0px 50px 50px 0px; }
+.containerc main .contacto {
+  font-family: 'Chivo Mono', monospace;
+  background-image: url(../img/contactofondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .containerc main .contacto .cuadro {
+    background-color: #ffe9ae8c;
+    margin: 0px 20px 0px 20px; }
+    .containerc main .contacto .cuadro h2 {
+      text-align: center;
+      padding: 20px 0px 30px 0px; }
+    .containerc main .contacto .cuadro h3 {
+      padding: 30px; }
+    .containerc main .contacto .cuadro p {
+      padding: 0px 30px 0px 30px; }
+    .containerc main .contacto .cuadro form {
+      padding: 30px; }
+      .containerc main .contacto .cuadro form .comentario h3 {
+        padding: 50px 50px 0px 50px; }
+      .containerc main .contacto .cuadro form .comentario textarea {
+        padding: 0px 50px 50px 0px; }
 
 footer {
   background-color: #2b0504;
-  display: flex;
-  grid-area: footer; }
+  display: flex; }
   footer h2 {
     font-family: 'Chivo Mono', monospace;
     font-size: 20px;
@@ -261,91 +254,407 @@ footer {
       width: 30px; }
 
 @media (max-width: 500px) {
-  .gridcontainer {
+  .container {
     width: 100%;
-    margin: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 180px auto 100px;
-    grid-template-areas: "header" "main" "footer"; }
-    .gridcontainer header h1 a {
-      font-size: 35px; }
-    .gridcontainer main .hero {
+    margin: 0; }
+    .container header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      .container header h1 {
+        font-size: 30px; }
+        .container header h1 span {
+          display: none; }
+      .container header nav .menu li:hover {
+        background-color: #2b0504;
+        padding: auto;
+        transition: 1s;
+        color: #f2f79e; }
+      .container header nav .menu li a {
+        font-size: 10px;
+        width: 10px; }
+    .container main .hero {
       background-image: url(../img/persistencia.jpg);
       background-position: center;
       background-size: cover; }
-    .gridcontainer main .productos .cajasproductos div {
-      padding: 0;
-      width: 200px;
-      background-color: #c9d6ea; }
-      .gridcontainer main .productos .cajasproductos div img {
-        width: 190px;
-        height: 260px; }
-    .gridcontainer main .fixed {
+      .container main .hero div {
+        width: 400px; }
+        .container main .hero div p {
+          font-size: 20px;
+          margin: auto; }
+    .container main .productos {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .container main .productos p {
+        width: 500px; }
+      .container main .productos .cajasproductos div {
+        padding: 0;
+        background-color: #c9d6ea; }
+    .container main .fixed {
       display: none; }
-    .gridcontainer footer div {
-      margin-left: 300px; }
-  .gridcontainerp {
+    .container footer div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0px; }
+      .container footer div img {
+        height: 30px; }
+  .containerp {
     width: 100%;
-    margin: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 180px auto 100px;
-    grid-template-areas: "header" "main" "footer"; }
-    .gridcontainerp header h1 a {
-      font-size: 35px; }
-    .gridcontainerp main .titulop {
+    margin: 0; }
+    .containerp header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      .containerp header h1 a {
+        font-size: 30px; }
+        .containerp header h1 a span {
+          display: none; }
+      .containerp header nav .menu li a {
+        font-size: 10px;
+        width: 10px; }
+    .containerp main .titulop {
       background-color: #e1e9f3; }
-    .gridcontainerp main .pinturas {
+    .containerp main .pinturas {
       background-color: #e1e9f3; }
-      .gridcontainerp main .pinturas .horizontal1 img {
+      .containerp main .pinturas .horizontal1 img {
         width: 200px;
         padding-left: 0px; }
-      .gridcontainerp main .pinturas .vertical img {
+      .containerp main .pinturas .vertical img {
         width: 190px;
         padding-left: 0px;
         margin-left: 0px; }
-      .gridcontainerp main .pinturas .horizontal2 img {
+      .containerp main .pinturas .horizontal2 img {
         width: 200px;
         padding-left: 0px; }
-    .gridcontainerp main .pagination {
+    .containerp main .pagination {
       background-color: #e1e9f3; }
-    .gridcontainerp footer div {
-      margin-left: 300px; }
-  .gridcontainern {
+    .containerp footer div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0px; }
+      .containerp footer div img {
+        height: 30px; }
+  .containern {
     width: 100%;
-    margin: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 180px auto 100px;
-    grid-template-areas: "header" "mainn" "footer"; }
-    .gridcontainern footer div {
-      margin-left: 300px; }
-    .gridcontainern main .nosotros {
+    margin: 0; }
+    .containern header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      .containern header h1 a {
+        font-size: 30px; }
+        .containern header h1 a span {
+          display: none; }
+      .containern header nav .menu li a {
+        font-size: 10px;
+        width: 10px; }
+    .containern main .nosotros {
       background-image: url(../img/oldhouse.jpg);
       background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat; }
-      .gridcontainern main .nosotros .nosotrostexto h2 {
-        font-size: 20px; }
-      .gridcontainern main .nosotros .nosotrostexto p {
+      background-size: cover; }
+      .containern main .nosotros .nosotrostexto h2 {
+        font-size: 20px;
+        padding-top: 5px; }
+      .containern main .nosotros .nosotrostexto p {
         font-size: 13px;
-        margin: 0; }
-  .gridcontainers {
+        margin: 0;
+        line-height: 15px;
+        padding-top: 10px; }
+    .containern footer div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0px; }
+      .containern footer div img {
+        height: 30px; }
+  .containers {
     width: 100%;
-    margin: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 180px auto 100px;
-    grid-template-areas: "header" "mains" "footer"; }
-    .gridcontainers footer div {
+    margin: 0; }
+    .containers header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      .containers header h1 a {
+        font-size: 30px; }
+        .containers header h1 a span {
+          display: none; }
+      .containers header nav .menu li a {
+        font-size: 10px;
+        width: 10px; }
+    .containers main .servicios .subservicios {
+      width: 95%; }
+      .containers main .servicios .subservicios .bloque1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .containers main .servicios .subservicios .bloque1 p {
+          font-size: 15px;
+          width: 80%;
+          text-align: center;
+          padding: 8px; }
+        .containers main .servicios .subservicios .bloque1 img {
+          width: 80%;
+          padding-bottom: 30px; }
+      .containers main .servicios .subservicios .bloque2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .containers main .servicios .subservicios .bloque2 p {
+          font-size: 15px;
+          width: 80%;
+          text-align: center;
+          padding: 8px; }
+        .containers main .servicios .subservicios .bloque2 img {
+          width: 80%; }
+      .containers main .servicios .subservicios .bloque3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .containers main .servicios .subservicios .bloque3 p {
+          font-size: 15px;
+          width: 80%;
+          text-align: center;
+          padding: 8px; }
+    .containers footer div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0px; }
+      .containers footer div img {
+        height: 30px; }
+  .containerc {
+    width: 100%;
+    margin: 0; }
+    .containerc header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      .containerc header h1 a {
+        font-size: 30px; }
+        .containerc header h1 a span {
+          display: none; }
+      .containerc header nav .menu li a {
+        font-size: 10px;
+        width: 10px; }
+    .containerc footer div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0px; }
+      .containerc footer div img {
+        height: 35px; } }
+
+@media (max-width: 750px) {
+  .container {
+    width: 100%;
+    margin: 0; }
+    .container header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      .container header h1 {
+        font-size: 30px; }
+        .container header h1 span {
+          display: none; }
+      .container header nav .menu li:hover {
+        background-color: #2b0504;
+        padding: auto;
+        transition: 1s;
+        color: #f2f79e; }
+      .container header nav .menu li a {
+        font-size: 10px;
+        width: 10px; }
+    .container main .hero {
+      background-image: url(../img/persistencia.jpg);
+      background-position: center;
+      background-size: auto; }
+      .container main .hero div {
+        width: 80%; }
+        .container main .hero div p {
+          font-size: 15px;
+          margin: auto; }
+        .container main .hero div h2 {
+          font-size: 20px; }
+          .container main .hero div h2:hover {
+            transform: scale(1.1); }
+    .container main .productos p {
+      width: 80%; }
+    .container main .productos .cajasproductos {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .container main .productos .cajasproductos div {
+        padding: 0;
+        background-color: #c9d6ea; }
+    .container main .fixed {
+      display: none; }
+    .container footer div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0px; }
+      .container footer div img {
+        height: 30px; }
+  .containerp {
+    width: 100%;
+    margin: 0; }
+    .containerp header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      .containerp header h1 a {
+        font-size: 30px; }
+        .containerp header h1 a span {
+          display: none; }
+      .containerp header nav .menu li a {
+        font-size: 10px;
+        width: 10px; }
+    .containerp main .titulop {
+      background-color: #e1e9f3; }
+    .containerp main .pinturas {
+      background-color: #e1e9f3; }
+      .containerp main .pinturas .horizontal1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .containerp main .pinturas .horizontal1 img {
+          width: 80%;
+          padding-left: 0px; }
+        .containerp main .pinturas .horizontal1 p {
+          padding: 5px; }
+      .containerp main .pinturas .vertical {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .containerp main .pinturas .vertical img {
+          width: 80%; }
+        .containerp main .pinturas .vertical p {
+          padding: 5px; }
+      .containerp main .pinturas .horizontal2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .containerp main .pinturas .horizontal2 img {
+          width: 80%; }
+        .containerp main .pinturas .horizontal2 p {
+          padding: 5px; }
+    .containerp main .pagination {
+      background-color: #e1e9f3; }
+    .containerp footer div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0px; }
+      .containerp footer div img {
+        height: 30px; }
+  .containern {
+    width: 100%;
+    margin: 0; }
+    .containern header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      .containern header h1 a {
+        font-size: 30px; }
+        .containern header h1 a span {
+          display: none; }
+      .containern header nav .menu li a {
+        font-size: 10px;
+        width: 10px; }
+    .containern footer div {
       margin-left: 300px; }
-  .gridcontainerc {
+    .containern main .nosotros {
+      background-image: url(../img/oldhouse.jpg);
+      background-position: center;
+      background-size: cover; }
+      .containern main .nosotros .nosotrostexto h2 {
+        font-size: 20px;
+        padding-top: 5px; }
+      .containern main .nosotros .nosotrostexto p {
+        font-size: 13px;
+        margin: 0;
+        line-height: 15px;
+        padding-top: 10px; }
+    .containern footer div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0px; }
+      .containern footer div img {
+        height: 30px; }
+  .containers {
     width: 100%;
-    margin: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 180px auto 100px;
-    grid-template-areas: "header" "mainc" "footer"; }
-    .gridcontainerc footer div {
-      margin-left: 300px; } }
+    margin: 0; }
+    .containers header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      .containers header h1 a {
+        font-size: 30px; }
+        .containers header h1 a span {
+          display: none; }
+      .containers header nav .menu li a {
+        font-size: 10px;
+        width: 10px; }
+    .containers main .servicios .subservicios {
+      width: 95%; }
+      .containers main .servicios .subservicios .bloque1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .containers main .servicios .subservicios .bloque1 p {
+          font-size: 15px;
+          width: 80%;
+          text-align: center; }
+        .containers main .servicios .subservicios .bloque1 img {
+          width: 80%;
+          padding-bottom: 30px; }
+      .containers main .servicios .subservicios .bloque2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .containers main .servicios .subservicios .bloque2 p {
+          font-size: 15px;
+          width: 80%;
+          text-align: center; }
+        .containers main .servicios .subservicios .bloque2 img {
+          width: 80%; }
+      .containers main .servicios .subservicios .bloque3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .containers main .servicios .subservicios .bloque3 p {
+          font-size: 15px;
+          width: 80%;
+          text-align: center; }
+    .containers main footer div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0px; }
+      .containers main footer div img {
+        height: 30px; }
+    .containers .containerc {
+      width: 100%;
+      margin: 0; }
+      .containers .containerc header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; }
+        .containers .containerc header h1 a {
+          font-size: 30px; }
+          .containers .containerc header h1 a span {
+            display: none; }
+        .containers .containerc header .menu li a {
+          font-size: 10px;
+          width: 10px; }
+    .containers footer div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0px; }
+      .containers footer div img {
+        height: 35px; } }

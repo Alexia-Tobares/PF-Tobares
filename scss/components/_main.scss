@@ -1,8 +1,7 @@
 //*INDEX
 
-.gridcontainer{
+.container{
     main{
-        grid-area: main;
 
         .hero {
             background-image: url(../img/fondoadan.jpg);
@@ -93,7 +92,7 @@
 
 //*PRODUCTOS
 
-.gridcontainerp{
+.containerp{
     main{
         .titulop{
             font-family: 'Chivo Mono', monospace;
@@ -156,9 +155,8 @@
 
 //*NOSOTROS
 
-.gridcontainern{
+.containern{
     main{
-        grid-area: mainn;
         .nosotros{
         font-family: 'Chivo Mono', monospace;
         background-image: url(../img/nosotrosfondo.jpg);
@@ -189,9 +187,8 @@
 
 //*SERVICIOS
 
-.gridcontainers{
+.containers{
     main{
-        grid-area: mains;
         .servicios{
             font-family: 'Chivo Mono', monospace;
             margin: auto;
@@ -252,9 +249,8 @@
 
 //*CONTACTO
 
-.gridcontainerc{
+.containerc{
     main{
-        grid-area: mainc;
         .contacto{
             font-family: 'Chivo Mono', monospace;
             background-image: url(../img/contactofondo.jpg);
